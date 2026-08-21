@@ -4,7 +4,7 @@
 
 [![Interactive workspace](https://img.shields.io/badge/Experience-Interactive%20workspace-00A889?style=flat-square)](https://stockflow-bixuacci.manus.space)
 [![Interface](https://img.shields.io/badge/Interface-Responsive%20web%20app-203B4A?style=flat-square)](https://stockflow-bixuacci.manus.space)
-[![Build](https://img.shields.io/badge/Build-Vite%20%2B%20TypeScript-C78729?style=flat-square)](#local-development)
+[![Build](https://img.shields.io/badge/Build-Vanilla%20JavaScript%20%2B%20Vite-C78729?style=flat-square)](#local-development)
 
 StockFlow is an operational inventory workspace that puts **stock evidence before stock assumptions**. It helps a warehouse or retail team surface the difference between expected and physical quantities, record the audit evidence, and move the discrepancy into a clear review workflow.
 
@@ -95,7 +95,7 @@ The three-step flow glyph appears in the primary shell as a compact symbol for t
 
 ### Prerequisites
 
-Use a modern Node.js environment with pnpm available. The project is a Vite-powered client application and does not require a database or server-side environment for the interactive demonstration.
+Use a modern Node.js environment with pnpm available. The project is a Vite-powered **vanilla JavaScript** client application and does not require a database or server-side environment for the interactive demonstration.
 
 ### Run the workspace
 
@@ -129,16 +129,13 @@ pnpm build
 ```text
 stockflow-inventory/
 ├── client/
-│   ├── index.html                  # App metadata, typography, and favicon
-│   └── src/
-│       ├── components/
-│       │   └── StockFlowSidebar.tsx # Responsive operations navigation shell
-│       ├── data/
-│       │   └── stockflowData.ts     # Demo records and dashboard data
-│       ├── pages/
-│       │   └── Home.tsx             # Interactive workflow workspace
-│       ├── App.tsx                  # App composition
-│       └── index.css                # Ledger & Signal visual system
+│   ├── index.html                  # Semantic application entry point
+│   ├── css/
+│   │   └── main.css                # Ledger & Signal visual system
+│   └── js/
+│       ├── app.js                  # State, validation, workflows, and events
+│       ├── data.js                 # Demonstration records and dashboard data
+│       └── render.js               # Semantic HTML view rendering
 ├── ideas.md                         # Design rationale and brand decisions
 ├── todo.md                          # Delivery checklist
 └── package.json
@@ -148,7 +145,7 @@ stockflow-inventory/
 
 ## Implementation scope
 
-This repository currently delivers a **responsive client-side interactive demonstration**. It models inventory actions using local React state so the full workspace can be explored without credentials or a database.
+This repository currently delivers a **responsive client-side interactive demonstration**. It models inventory actions with browser-local vanilla JavaScript state so the full workspace can be explored without credentials or a database.
 
 | Included now | Production backend extension |
 | --- | --- |
@@ -161,7 +158,7 @@ This repository currently delivers a **responsive client-side interactive demons
 <details>
 <summary><strong>Suggested backend integration sequence</strong></summary>
 
-Start by moving products, warehouses, transactions, audits, and discrepancies into a normalized MySQL schema. Expose the inventory and audit workflows through a Spring Boot REST API with server-side transaction boundaries. Add JWT-based roles for administrators, warehouse managers, inventory managers, and cashiers. Finally, replace the local state functions in `Home.tsx` with authenticated requests while retaining the current interface states and validation feedback.
+Start by moving products, warehouses, transactions, audits, and discrepancies into a normalized MySQL schema. Expose the inventory and audit workflows through a Spring Boot REST API with server-side transaction boundaries. Add JWT-based roles for administrators, warehouse managers, inventory managers, and cashiers. Finally, replace the local state functions in `client/js/app.js` with authenticated requests while retaining the current interface states and validation feedback.
 
 </details>
 
