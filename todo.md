@@ -17,3 +17,8 @@
 - [x] Recreate the StockFlow workspace using plain HTML, CSS, and JavaScript modules.
 - [x] Validate the interactive workflows, build output, responsive views, and source-language mix.
 - [x] Push the refactored project to the existing GitHub repository.
+
+## Repository visibility checklist
+
+- [x] Change the StockFlow GitHub repository visibility from private to public.
+- [x] Verify public access and share the repository link.
