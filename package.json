@@ -1,0 +1,16 @@
+{
+  "name": "stockflow-inventory",
+  "version": "1.1.0",
+  "type": "module",
+  "private": true,
+  "description": "A JavaScript-first interactive inventory and stock discrepancy workspace.",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview --host",
+    "check": "node --check client/js/app.js && node --check client/js/data.js && node --check client/js/render.js"
+  },
+  "devDependencies": {
+    "vite": "^7.1.7"
+  }
+}
