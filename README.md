@@ -6,7 +6,7 @@
 [![Interface](https://img.shields.io/badge/Interface-Responsive%20web%20app-203B4A?style=flat-square)](https://stockflow-bixuacci.manus.space)
 [![Build](https://img.shields.io/badge/Build-Vanilla%20JavaScript%20%2B%20Vite-C78729?style=flat-square)](#local-development)
 
-StockFlow is an operational inventory workspace that puts **stock evidence before stock assumptions**. It helps a warehouse or retail team surface the difference between expected and physical quantities, record the audit evidence, and move the discrepancy into a clear review workflow.
+StockFlow is an operational inventory workspace that puts **stock evidence before stock assumptions**. It helps a warehouse or retail teams surface the difference between expected and physical quantities, record the audit evidence, and move the discrepancy into a clear review workflow.
 
 | Open the project | Purpose |
 | --- | --- |
