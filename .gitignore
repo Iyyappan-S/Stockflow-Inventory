@@ -14,7 +14,7 @@ build/
 .env.test.local
 .env.production.local
 
-# IDE and editor files
+
 .vscode/
 .idea/
 *.swp
