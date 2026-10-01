@@ -24,7 +24,7 @@ packages:
     engines: {node: '>=18'}
     cpu: [arm64]
     os: [android]
-
+    
   '@esbuild/android-arm@0.25.10':
     resolution: {integrity: sha512-dQAxF1dW1C3zpeCDc5KqIYuZ1tgAdRXNoZP7vkBIRtKZPYe2xVr/d3SkirklCHudW1B45tGiUlz2pUWDfbDD4w==}
     engines: {node: '>=18'}
