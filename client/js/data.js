@@ -1,7 +1,4 @@
-/**
- * StockFlow's browser-local demonstration ledger.
- * A production API can replace these seeds without changing the presentation layer.
- */
+
 export const warehouses = ["Central warehouse", "Northside retail", "Harbor logistics"];
 
 export const navGroups = [
