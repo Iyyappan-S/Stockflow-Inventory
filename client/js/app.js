@@ -1,7 +1,3 @@
-/**
- * StockFlow application controller: browser-local state, event delegation, form validation,
- * audit/discrepancy automation, POS stock controls, and CSV export.
- */
 import { initialAudits, initialDiscrepancies, initialNotifications, initialProducts } from "./data.js";
 import { render } from "./render.js";
 
