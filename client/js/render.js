@@ -1,7 +1,3 @@
-/**
- * StockFlow view renderer. Each function returns semantic HTML instead of framework components.
- * The application controller owns state and delegates browser events to data-action elements.
- */
 import { categoryMix, movementLog, navGroups, salesTarget, salesTrend, warehouses } from "./data.js";
 
 export const pageCopy = {
