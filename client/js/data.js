@@ -1,6 +1,4 @@
-
 export const warehouses = ["Central warehouse", "Northside retail", "Harbor logistics"];
-
 export const navGroups = [
   { label: "INTELLIGENCE", items: [["dashboard", "Overview", "grid"], ["inventory", "Inventory", "box"], ["discrepancies", "Discrepancies", "shield"], ["audits", "Stock audits", "check"]] },
   { label: "WORKFLOWS", items: [["transfers", "Transfers", "arrows"], ["pos", "Point of sale", "scan"], ["reports", "Reports", "file"], ["activity", "Activity log", "pulse"]] },
